@@ -1,0 +1,7 @@
+Time,car1(stop),car2(none),car3(stop),car4(move)
+dataset\chi_20250521125055\eHMI_003_case1\1-egoLog.csv,,,,,
+dataset\chi_20250521125055\eHMI_003_case1\2-carLog.csv,,,,,
+dataset\chi_20250521125055\eHMI_003_case1\3-truckLog.csv,,,,,
+dataset\chi_20250521125055\eHMI_003_case1\4-carLog.csv,,,,,
+dataset\chi_20250521125055\eHMI_003_case1\BottomdLog.csv,,,,,
+dataset\chi_20250521125055\eHMI_003_case1\VR_HeadsetLog.csv,,,,,
