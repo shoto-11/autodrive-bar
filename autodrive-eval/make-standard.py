@@ -18,4 +18,8 @@ def make_standard(new_file_name, RU_file_name, LD_file_name):
 # 実行例
 # car1(stop)_standard.csv の形で出力するように
 
-#make_standard("combined_data_test", "RU_data.csv", "LD_data.csv")
+combined_data = "combined_data_test"
+RU_data= "RU_data.csv"
+LD_data= "LD_data.csv"
+
+make_standard(combined_data, RU_data, LD_data )
