@@ -54,4 +54,5 @@ def make_combined_csv(RU_file_name: str, LD_file_name: str):
     # --- 確認 ---
     return combined_df
 
-print(make_combined_csv('RU_data.csv', 'LD_data.csv'))
+#print(make_combined_csv('RU_data.csv', 'LD_data.csv'))
+
