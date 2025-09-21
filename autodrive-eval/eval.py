@@ -77,8 +77,8 @@ def check_screen(evaluate_df, standard_df, header):
                   (evaluate_df_sliced['Rotation (X)'] <= standard_df_sliced['RU-Rotation (X)'])
     
     # Y軸の条件: LD-rotation-y > Rotation (Y) > RU-rotation-y
-    condition_y = (standard_df_sliced['LD-Rotation (Y)'] <= evaluate_df_sliced['Rotation (Y)']) & \
-                  (evaluate_df_sliced['Rotation (Y)'] <= standard_df_sliced['RU-Rotation (Y)'])
+    condition_y = (standard_df_sliced['LD-Rotation (Y)'] >= evaluate_df_sliced['Rotation (Y)']) & \
+                  (evaluate_df_sliced['Rotation (Y)'] >= standard_df_sliced['RU-Rotation (Y)'])
 
     # 両方の条件が真である場合に1、そうでなければ0とする
     result = (condition_x & condition_y).astype(int)
@@ -151,7 +151,7 @@ def merge_df(car1_df,car2_df,car3_df,car4_df,button_df):
 
 
 # データセットフォルダ内のファイルパス
-#base_path = "dataset/chi_20250521125055/eHMI_003_case2/3-truckLog.csv"
+#base_path = "2-carLog.csv"
 #print(check_conditions(base_path))
 #evaluate_file_path = 'dataset/chi_20250521125055/eHMI_003_case1/VR_HeadsetLog.csv'
 #standard_file_path = 'standard/maked/car1(move)_standard.csv'

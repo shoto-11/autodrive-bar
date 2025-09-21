@@ -44,6 +44,9 @@ def write_csv_per_folder(new_folder_name):
     
     # 各フォルダ名で個別のCSVファイルを作成
     for folder in folder_names_list:
+        if "case22" in folder.lower():  # 大文字小文字区別したくない場合
+            print(f"⚠️ {folder} をスキップしました。")
+            continue
         # CSVファイルのパスを設定
         csv_file_name = f"{folder}.csv"
         csv_file_path = os.path.join(save_folder_path, csv_file_name)
@@ -110,5 +113,5 @@ def write_csv_per_folder(new_folder_name):
         
         #print(f"CSVファイル '{csv_file_path}' を作成しました。")
 
-new_folder_name= "chi_20250521125055"
+new_folder_name= "chi_20250521130339_jialong"
 write_csv_per_folder(new_folder_name)
