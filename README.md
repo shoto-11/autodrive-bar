@@ -30,6 +30,13 @@ python make-graph-button.py
 This script generates graphs showing how long participants pressed the button during each moment.
 Graphs are saved in the graphs/PrimaryButtonFlag folder and compared across identical scenarios.
 
+### Generate collision-graph
+```
+python make-graph-collision.py
+```
+This script generates graphs showing how many participants pressed the button when the car is moving.
+Graphs are saved in the graphs/collision folder.
+
 ## Customization
 
 ## References
