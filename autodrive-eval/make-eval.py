@@ -113,5 +113,5 @@ def write_csv_per_folder(new_folder_name):
         
         #print(f"CSVファイル '{csv_file_path}' を作成しました。")
 
-new_folder_name= "chi_20250521130339_jialong"
+new_folder_name= "chi_20251113160535_enomoto"
 write_csv_per_folder(new_folder_name)
