@@ -1,6 +1,7 @@
 import os
 import eval 
 import pandas as pd
+import sys
 # 作成したいフォルダのパスを指定
 # この例では、'evaluated'フォルダの中に'new_folder'という名前のフォルダを作成します。
 
@@ -113,5 +114,6 @@ def write_csv_per_folder(new_folder_name):
         
         #print(f"CSVファイル '{csv_file_path}' を作成しました。")
 
-new_folder_name= "chi_20251123164328_waka"
+args = sys.argv
+new_folder_name=args[1]
 write_csv_per_folder(new_folder_name)
