@@ -12,7 +12,16 @@ cd autodrive-eval
 ## Usage
 ### Generate car-watching-graphs
 ```
-python python make-graph-car.py
+python make-eval.py "chi_20251123164328_waka"
+```
+This script generates csv files that indicate 0 or 1 how long they watched cars and pushed button.
+The graphs are saved in the evaluated folder.
+exaple: please change chi_20251123164328_waka to what you want to evaluate folder
+
+
+### Generate car-watching-graphs
+```
+python make-graph-car.py
 ```
 This script generates graphs that indicate how long participants watched each vehicle.
 The graphs are saved in the graphs folder, and comparisons are made within matching scenarios.
